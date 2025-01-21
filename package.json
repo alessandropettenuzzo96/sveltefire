@@ -1,12 +1,12 @@
 {
-	"name": "sveltefire",
+	"name": "@sandrocan/sveltefire",
 	"version": "0.5.0",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",
 		"preview": "vite preview",
-		"prepare": "npm run build",
 		"package": "svelte-kit sync && svelte-package && publint",
+		"release": "standard-version && git push --follow-tags && npm publish",
 		"prepublishOnly": "npm run package",
 		"test": "playwright test",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
@@ -14,6 +14,7 @@
 		"lint": "eslint .",
 		"fire": "firebase emulators:start"
 	},
+	"private": true,
 	"module": "./dist/index.js",
 	"exports": {
 		".": {
@@ -42,6 +43,7 @@
 		"eslint-plugin-svelte": "^2.46.1",
 		"firebase-tools": "^13.29.1",
 		"publint": "^0.3.2",
+		"standard-version": "^9.5.0",
 		"svelte": "^5.19.1",
 		"svelte-check": "^4.1.4",
 		"tslib": "^2.8.1",
