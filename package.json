@@ -13,9 +13,11 @@
 		"lint": "eslint .",
 		"fire": "firebase emulators:start"
 	},
+	"module": "./dist/index.js",
 	"exports": {
 		".": {
 			"types": "./dist/index.d.ts",
+			"import": "./dist/index.js",
 			"svelte": "./dist/index.js"
 		}
 	},
