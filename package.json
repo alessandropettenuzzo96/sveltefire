@@ -1,6 +1,6 @@
 {
 	"name": "@sandrocan/sveltefire",
-	"version": "0.5.1",
+	"version": "0.5.2",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",
@@ -14,7 +14,6 @@
 		"lint": "eslint .",
 		"fire": "firebase emulators:start"
 	},
-	"private": true,
 	"module": "./dist/index.js",
 	"exports": {
 		".": {
