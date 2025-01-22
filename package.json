@@ -1,5 +1,5 @@
 {
-	"name": "@sandrocan/sveltefire",
+	"name": "@alessandropettenuzzo96/sveltefire",
 	"version": "0.5.2",
 	"scripts": {
 		"dev": "vite dev",
