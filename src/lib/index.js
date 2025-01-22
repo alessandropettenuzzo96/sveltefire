@@ -9,6 +9,8 @@ import DownloadURL from './components/DownloadURL.svelte';
 import StorageList from './components/StorageList.svelte';
 import UploadTask from './components/UploadTask.svelte';
 import PageView from './components/PageView.svelte';
+import RedirectOnSignedOut from './components/RedirectOnSignedOut.svelte';
+import RedirectOnSignedIn from './components/RedirectOnSignedIn.svelte';
 import { userStore } from './stores/auth';
 import { docStore, collectionStore  } from './stores/firestore';
 import { nodeStore, nodeListStore } from './stores/rtdb';
@@ -22,6 +24,8 @@ export {
     FirebaseApp,
     SignedOut,
     SignedIn,
+    RedirectOnSignedIn,
+    RedirectOnSignedOut,
     UploadTask,
     StorageList,
     DownloadURL,
