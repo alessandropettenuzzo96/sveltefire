@@ -10,7 +10,7 @@
       default: { user: User, auth: Auth, signOut: () => Promise<void> }
     }
     
-  </script>
+</script>
   
   {#if $user}
     <slot user={$user} {auth} signOut={() => signOut(auth)} />
