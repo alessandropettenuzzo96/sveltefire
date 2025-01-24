@@ -1,6 +1,6 @@
 {
 	"name": "@alessandropettenuzzo96/sveltefire",
-	"version": "0.5.10",
+	"version": "0.5.11",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",
@@ -15,7 +15,6 @@
 		"fire": "firebase emulators:start"
 	},
 	"module": "./dist/index.js",
-
 	"exports": {
 		"./server": {
 			"types": "./dist/index.server.d.ts",
