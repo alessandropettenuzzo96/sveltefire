@@ -15,7 +15,13 @@
 		"fire": "firebase emulators:start"
 	},
 	"module": "./dist/index.js",
+
 	"exports": {
+		"./server": {
+			"types": "./dist/index.server.d.ts",
+			"import": "./dist/index.server.js",
+			"require": "./dist/index.server.js"
+		},
 		".": {
 			"types": "./dist/index.d.ts",
 			"import": "./dist/index.js",

@@ -16,7 +16,6 @@ import { docStore, collectionStore  } from './stores/firestore';
 import { nodeStore, nodeListStore } from './stores/rtdb';
 import { getFirebaseContext } from './stores/sdk';
 import { downloadUrlStore, storageListStore, uploadTaskStore } from './stores/storage';
-import { validate } from './server/auth';
 
 export {
     Doc,
@@ -40,5 +39,4 @@ export {
     nodeListStore,
     userStore,
     getFirebaseContext,
-    validate,
 }
