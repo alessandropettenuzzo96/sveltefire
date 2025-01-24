@@ -1,7 +1,7 @@
 <script lang="ts">
   import type { User } from "firebase/auth";
   import { userStore } from "$lib/stores/auth.js";
-  import { getFirebaseContext } from "$lib/index.js";
+  import { getFirebaseContext } from "$lib/stores/sdk.js";
 
   const auth = getFirebaseContext().auth!;
   const user = userStore(auth)

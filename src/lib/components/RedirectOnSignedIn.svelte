@@ -1,7 +1,6 @@
 <script lang="ts">
     import { getFirebaseContext } from "../stores/sdk.js";
     import { userStore } from "../stores/auth.js";
-    import type { Auth } from 'firebase/auth';
     import {goto} from "$app/navigation";
     import {onMount} from "svelte";
 

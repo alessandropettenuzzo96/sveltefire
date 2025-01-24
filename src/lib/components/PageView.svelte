@@ -1,6 +1,6 @@
 <script lang="ts">
   import { logEvent, setUserId, isSupported } from "firebase/analytics";
-  import { getFirebaseContext } from "$lib/index.js";
+  import { getFirebaseContext } from "$lib/stores/sdk.js";
   import { onMount } from "svelte";
 
   export let eventName = "page_view";
