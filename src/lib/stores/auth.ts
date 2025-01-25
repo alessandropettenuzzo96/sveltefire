@@ -30,6 +30,7 @@ export function userStore(auth: Auth, startWith = null) {
 
   const { subscribe } = writable(auth?.currentUser ?? null, (set) => {
     unsubscribe = onAuthStateChanged(auth, (user) => {
+      console.log("userStore", user);
       set(user);
     });
 
